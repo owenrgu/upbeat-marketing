@@ -1,0 +1,298 @@
+:root {
+    --primary: #7C5CFC;
+    --primary-light: #9B7FFF;
+    --secondary: #A855F7;
+    --dark: #07060F;
+    --mid: #0E0C1A;
+    --surface: #13111F;
+    --text: #EEE9FF;
+    --muted: rgba(200, 190, 255, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--dark);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ── NAV ── */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(7, 6, 15, 0.88);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(124, 92, 252, 0.18);
+}
+
+.nav-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.06em;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.nav-back {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.2s;
+}
+
+.nav-back:hover {
+    color: var(--text);
+}
+
+.nav-back svg {
+    transition: transform 0.2s;
+}
+
+.nav-back:hover svg {
+    transform: translateX(-3px);
+}
+
+/* ── PAGE HEADER ── */
+.page-header {
+    padding: 9rem 0 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 50% 80% at 20% 50%, rgba(124, 92, 252, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 60% at 80% 50%, rgba(168, 85, 247, 0.10) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.page-header .label {
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.page-header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
+
+.page-header .meta {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-weight: 300;
+}
+
+.accent-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+    opacity: 0.2;
+}
+
+/* ── CONTENT ── */
+.privacy-content {
+    padding: 5rem 0 7rem;
+    background: var(--mid);
+}
+
+.privacy-section {
+    margin-bottom: 3.5rem;
+    padding-bottom: 3.5rem;
+    border-bottom: 1px solid rgba(124, 92, 252, 0.1);
+}
+
+.privacy-section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.section-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    color: var(--primary);
+    opacity: 0.6;
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+.privacy-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    letter-spacing: 0.03em;
+    margin-bottom: 1.25rem;
+    line-height: 1.1;
+}
+
+.privacy-section p {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.privacy-section p:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 1rem;
+}
+
+.privacy-section ul li {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    padding: 0.3rem 0 0.3rem 1.5rem;
+    position: relative;
+}
+
+.privacy-section ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.85rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary);
+    opacity: 0.6;
+}
+
+.privacy-section a {
+    color: var(--primary-light);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s;
+}
+
+.privacy-section a:hover {
+    color: var(--text);
+}
+
+/* Highlight box */
+.info-box {
+    background: var(--surface);
+    border: 1px solid rgba(124, 92, 252, 0.2);
+    border-left: 3px solid var(--primary);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+}
+
+.info-box p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+/* Contact card */
+.contact-card {
+    background: var(--surface);
+    border: 1px solid rgba(124, 92, 252, 0.2);
+    border-radius: 16px;
+    padding: 1.75rem 2rem;
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+
+.contact-card .contact-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+.contact-card p {
+    color: var(--text);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+.contact-card a {
+    color: var(--primary-light);
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    color: var(--text);
+    text-decoration: underline;
+}
+
+/* ── FOOTER ── */
+footer {
+    background: #040309;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 2.5rem 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+.footer-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: var(--muted);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: var(--text);
+}
+
+/* ── REVEAL ── */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

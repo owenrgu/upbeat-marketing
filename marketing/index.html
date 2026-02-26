@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>UpBeat - Request your rhythm. Get your vibe.</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="main-nav">
+        <span class="nav-logo">UpBeat</span>
+        <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-glow"></div>
+        <div class="rings">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+        </div>
+        <div class="soundbars left">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="soundbars right">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">Request your rhythm. Get your vibe.</p>
+            <h1 class="hero-title">UP<span>BEAT</span></h1>
+            <p class="hero-sub">Request your favourite songs, cast your votes to influence the playlist, and make every night unforgettable.</p>
+            <a href="#" class="hero-btn" id="show-me-btn">
+                Show Me
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M7 1v12M1 7l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+        <div class="scroll-hint">
+            <div class="mouse"></div><span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- LOGO ZOOM ZONE -->
+    <div id="zoom-zone">
+        <div id="zoom-overlay">
+            <span id="zoom-logo">UPBEAT</span>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main-content">
+
+        <!-- What is UpBeat? -->
+        <section class="section-dark" id="intro">
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-6 reveal">
+                        <p class="label">What is UpBeat?</p>
+                        <h2 class="section-title mb-4">The crowd<br />runs the<br /><span style="color:var(--primary)">dancefloor.</span></h2>
+                        <p class="section-body">UpBeat puts music control in the hands of your customers. No more shouting over the bar - they browse, request, and vote from their phones. You set the rules, they set the vibe.</p>
+                    </div>
+                    <div class="col-lg-6 reveal" style="transition-delay:0.15s">
+                        <div style="position:relative;">
+                            <div class="phone-glow"></div>
+                            <div class="phone-mock">
+                                <img src="./app-screenshot.png" alt="UpBeat app screenshot" style="width:100%;height:100%;object-fit:cover;display:block;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="accent-divider"></div>
+
+        <!-- Features -->
+        <section class="section-mid">
+            <div class="container">
+                <div class="text-center mb-5 reveal">
+                    <p class="label">Features</p>
+                    <h2 class="section-title">Built for the vibes.</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.05s">
+                        <div class="feat-card"><span class="feat-icon">🎵</span>
+                            <h4>Live Song Requests</h4>
+                            <p>Customers search and request any song in seconds, adding to the playlist in real-time.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.1s">
+                        <div class="feat-card"><span class="feat-icon">⚔️</span>
+                            <h4>Vote Battles</h4>
+                            <p>Vote for your favourite song to influence the playlist. Songs with more votes will be played sooner!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.15s">
+                        <div class="feat-card"><span class="feat-icon">📊</span>
+                            <h4>Live Queue</h4>
+                            <p>For full transparency: everyone sees what's up next and how many votes each track has.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.2s">
+                        <div class="feat-card"><span class="feat-icon">🎛️</span>
+                            <h4>Bar Controls</h4>
+                            <p>Owners keep full control - block songs, set request limits, and override the queue whenever needed. Customers pick from pre-approved songs, so the vibe stays exactly how you like it.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.25s">
+                        <div class="feat-card"><span class="feat-icon">⚡</span>
+                            <h4>Instant Setup</h4>
+                            <p>Register your venue in minutes. Guests connect via QR code or directly through the mobile app - zero friction, maximum engagement.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.3s">
+                        <div class="feat-card"><span class="feat-icon">📈</span>
+                            <h4>Venue Analytics</h4>
+                            <p>See what your crowd loves. Track top requested songs, busiest hours, and crowd engagement trends.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="accent-divider"></div>
+
+        <!-- How It Works -->
+        <section class="section-dark">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-5 reveal">
+                        <p class="label">How It Works</p>
+                        <h2 class="section-title mb-2">Three steps.<br />Infinite <span style="color:var(--primary)">vibes.</span></h2>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="step reveal">
+                            <div class="step-num">01</div>
+                            <div class="step-text">
+                                <h5>Bar scans in with a QR code</h5>
+                                <p>Register your venue, set your preferences, and display the QR code on your tables or bar top. You control everything from the songs you want to play to the user request limit.</p>
+                            </div>
+                        </div>
+                        <div class="step reveal" style="transition-delay:0.1s">
+                            <div class="step-num">02</div>
+                            <div class="step-text">
+                                <h5>Guests request & vote instantly</h5>
+                                <p>Customers scan, search for a song, submit a request, or jump into a live vote battle - right from their phone.</p>
+                            </div>
+                        </div>
+                        <div class="step reveal" style="transition-delay:0.2s">
+                            <div class="step-num">03</div>
+                            <div class="step-text">
+                                <h5>The highest votes play next</h5>
+                                <p>UpBeat surfaces the most popular songs to the top of the playlist. The crowd decides, the energy speaks for itself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="accent-divider"></div>
+
+        <!-- Join Waitlist -->
+        <section id="waitlist" class="section-mid">
+            <div class="container">
+                <div class="text-center mb-5 reveal">
+                    <p class="label">Early Access</p>
+                    <h2 class="section-title">Be first<br />through the<br /><span style="color:var(--primary)">door.</span></h2>
+                </div>
+                <div class="waitlist-box reveal">
+                    <div id="form-area">
+                        <h2>Join the waitlist</h2>
+                        <p>UpBeat is coming soon to venues across the UK. Drop your details and we'll be in touch the moment doors open.</p>
+                        <form id="waitlist-form" onsubmit="handleSubmit(event)" novalidate>
+                            <div class="form-group"><input type="text" class="form-control-dark" id="wb-name" placeholder="Your name" required /></div>
+                            <div class="form-group"><input type="email" class="form-control-dark" id="wb-email" placeholder="Your email address" required /></div>
+                            <div class="form-group"><input type="text" class="form-control-dark" id="wb-org"  placeholder="Your organisation name" required /></div>
+                            <div class="form-group">
+                                <select class="form-control-dark" id="wb-role">
+                                    <option value="" disabled selected>I am a... (optional)</option>
+                                    <option>Venue Owner or Manager</option>
+                                    <option>DJ or Entertainer</option>
+                                    <option>Bartender</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="submit-btn">Register My Interest →</button>
+                        </form>
+                        <p></p>
+                        <p class="privacy-note">By submitting this form you agree to our <a href="privacy.html">Privacy Notice</a>.</p>
+                    </div>
+                    <div class="success-msg" id="success-msg">
+                        <div class="checkmark">🎵</div>
+                        <h3>You're on the list!</h3>
+                        <p>We'll be in touch as soon as UpBeat opens up. Get ready to turn up the volume.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="accent-divider"></div>
+
+        <footer>
+            <div class="footer-logo">UPBEAT</div>
+            <p>© <span id="copyright-year"></span> UpBeat. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/hero.js"></script>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/footer.js"></script>
+
+</body>
+
+</html>
