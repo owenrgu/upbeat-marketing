@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpBeat - Join the Waitlist</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+    <link href="css/waitlist.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- DECORATIONS -->
+    <div class="bg-glow"></div>
+
+    <div class="rings">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+    </div>
+
+    <div class="soundbars left">
+        <div class="sbar"></div><div class="sbar"></div><div class="sbar"></div><div class="sbar"></div><div class="sbar"></div>
+    </div>
+    <div class="soundbars right">
+        <div class="sbar"></div><div class="sbar"></div><div class="sbar"></div><div class="sbar"></div><div class="sbar"></div>
+    </div>
+
+    <!-- MAIN FORM -->
+    <div class="page-wrap">
+        <div class="logo">UpBeat</div>
+
+        <div class="waitlist-card">
+            <div id="form-area">
+                <h1>Join the waitlist</h1>
+                <p class="subtitle">UpBeat is coming soon to venues across the UK. Drop your details and we'll be in touch the moment doors open.</p>
+                <form id="waitlist-form" onsubmit="handleSubmit(event)" novalidate>
+                    <div class="form-group">
+                        <input type="text" class="form-control-dark" id="wb-name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control-dark" id="wb-email" placeholder="Your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control-dark" id="wb-org" placeholder="Your organisation name" required>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control-dark" id="wb-role">
+                            <option value="" disabled selected>I am a... (optional)</option>
+                            <option>Venue Owner or Manager</option>
+                            <option>DJ or Entertainer</option>
+                            <option>Bartender</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">Register My Interest &rarr;</button>
+                </form>
+                <p class="privacy-note">By submitting this form you agree to our <a href="privacy.html">Privacy Notice</a>.</p>
+            </div>
+
+            <!-- success message -->
+            <div class="success-msg" id="success-msg">
+                <div class="checkmark">🎵</div>
+                <h3>You're on the list!</h3>
+                <p>We'll be in touch as soon as UpBeat opens up. Get ready to turn up the volume.</p>
+            </div>
+        </div>
+
+        <!-- learn more -->
+        <div class="learn-more">
+            <a href="https://owenrgu.github.io/pirates/marketing/">
+                Want to learn more about UpBeat?
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- link the same form script from index -->
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
